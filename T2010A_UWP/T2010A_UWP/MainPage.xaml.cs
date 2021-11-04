@@ -26,5 +26,17 @@ namespace T2010A_UWP
         {
             this.InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SplView.IsPaneOpen = !SplView.IsPaneOpen;
+        }
+
+        private void DemoForm(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(typeof(Pages.DemoForm)); //Chuyển nội dung của Frame sang DemoForm
+        }
+
+       
     }
 }

@@ -122,8 +122,8 @@
     <Compile Include="Email\Email.xaml.cs">
       <DependentUpon>Email.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Lab2\lab2.xaml.cs">
-      <DependentUpon>lab2.xaml</DependentUpon>
+    <Compile Include="Layout.xaml.cs">
+      <DependentUpon>Layout.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -132,8 +132,11 @@
     <Compile Include="Pages\Demo.xaml.cs">
       <DependentUpon>Demo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Demo2.xaml.cs">
-      <DependentUpon>Demo2.xaml</DependentUpon>
+    <Compile Include="Pages\DemoForm.xaml.cs">
+      <DependentUpon>DemoForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -161,7 +164,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Lab2\lab2.xaml">
+    <Page Include="Layout.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -173,7 +176,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Demo2.xaml">
+    <Page Include="Pages\DemoForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
