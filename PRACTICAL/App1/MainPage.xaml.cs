@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -38,6 +40,20 @@ namespace App1
             public string Name { get; set; }
             public string Role { get; set; }
             public int Birthyear { get; set; }
+
+        }
+
+        private void GetEmployeeInfo()
+        {
+            using (StreamReader file = File.OpenText(".\\employee.json"))
+            using (JsonTextReader reader = new JsonTextReader(file))
+            {
+                JObject jObject = (JObject)JToken.ReadFrom(reader);
+
+            }
+            var employee = from p in JObject["employee"]
+                           select new Employee((string)p["Name"], (string)p["Role"], (int)p["Birthyear"]);
+            Employee = employee.ToList<Employee>;
 
         }
 
